@@ -1,0 +1,26 @@
+# Terraform thư mục provider (nặng, không cần commit)
+**/.terraform/
+
+# Terraform lock file (NÊN commit, bỏ comment dòng dưới nếu không muốn)
+# .terraform.lock.hcl
+
+# Biến môi trường (chứa thông tin nhạy cảm)
+*.tfvars
+*.tfvars.json
+
+# Terraform state (chứa thông tin hạ tầng thực tế)
+*.tfstate
+*.tfstate.backup
+
+# Thư mục override (dùng khi dev local)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# File crash log của Terraform
+crash.log
+crash.*.log
+
+# File plan (có thể chứa thông tin nhạy cảm)
+*.tfplan
